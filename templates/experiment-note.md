@@ -3,7 +3,7 @@
 ## 基本信息
 
 - Date:
-- Direction: perception / vla
+- Category: content-a / content-b
 - Repository:
 - Commit:
 - Machine:

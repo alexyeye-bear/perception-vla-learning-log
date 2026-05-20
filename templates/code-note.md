@@ -6,7 +6,7 @@
 - Commit:
 - Branch:
 - Environment:
-- Direction: perception / vla
+- Category: content-a / content-b
 
 ## 阅读目标
 

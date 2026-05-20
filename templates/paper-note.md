@@ -8,7 +8,7 @@
 - Year:
 - Venue:
 - Tags:
-- Direction: autonomous-driving-perception / vla-embodied-ai
+- Category: content-a / content-b
 
 ## 一句话总结
 
