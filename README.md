@@ -27,8 +27,10 @@
 ├── experiments/                  # 实验、复现和小 demo 记录
 │   ├── content-a/
 │   └── content-b/
+├── topics/                       # 从每日日志自动生成的主题索引
 ├── assets/images/                # 图片、架构图、截图
 ├── templates/                    # 写作模板
+├── scripts/                      # 自动生成索引和 Git hook 脚本
 └── roadmap.md                    # 学习路线和主题索引
 ```
 
@@ -39,6 +41,30 @@
 - 代码阅读放到 `code-notes/content-a/` 或 `code-notes/content-b/`。
 - 实验记录放到 `experiments/content-a/` 或 `experiments/content-b/`。
 - 每篇笔记优先回答三个问题：这是什么、为什么重要、我学到了什么。
+- `topics/` 由脚本自动生成，用来按主题阅读日志章节。
+
+## 主题索引
+
+生成主题索引：
+
+```powershell
+python scripts/update_topic_indexes.py
+```
+
+安装本地 Git hook 后，每次 `git commit` 会自动更新并暂存 `topics/`：
+
+```powershell
+.\scripts\install-git-hook.ps1
+```
+
+写日志时可以给章节加显式标签，分类会更稳定：
+
+```markdown
+### 一个章节标题
+Topics: perception
+```
+
+当前支持的标签：`perception`、`vla`。没有标签时，脚本会用关键词粗略分类。
 
 ## 快速开始
 
