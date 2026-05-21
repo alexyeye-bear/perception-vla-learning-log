@@ -1,5 +1,7 @@
 # Learning Log
 
+learning of perception and VLA models
+
 个人学习日志仓库，用于记录学习内容、代码片段、实验过程和阶段性思考。
 
 ## 内容划分
